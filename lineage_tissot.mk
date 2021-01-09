@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2020 The Project Sakura
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +22,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common Sakura stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Sakura build type
+SAKURA_OFFICIAL := true
+
+# Gapps Sector
+SAKURA_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
+# Maintainer Sector
+SAKURA_MAINTAINER := Lokodetoddyn
+
+# FaceUnlock Sector
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
@@ -34,9 +49,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-IS_PHONE := true
 
 # Build fingerprint
 BUILD_FINGERPRINT := xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys

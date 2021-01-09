@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2020 The Project Sakura
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_tissot.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_tissot-eng \
+    lineage_tissot-userdebug \
+    lineage_tissot-user

@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2020 The Project Sakura
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,3 +52,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
+
+# SELinux
+SELINUX_IGNORE_NEVERALLOWS := true
