@@ -33,6 +33,9 @@ SAKURA_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
+# Bootlogo sector
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Maintainer Sector
 SAKURA_MAINTAINER := Lokodetoddyn
 
