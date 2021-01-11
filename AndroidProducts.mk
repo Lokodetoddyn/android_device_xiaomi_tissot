@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2017-2018 The LineageOS Project
-# Copyright (C) 2020 The Project Sakura
+# Copyright (C) 2021 The Project Legion
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tissot.mk
+    $(LOCAL_DIR)/legion_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_tissot-eng \
-    lineage_tissot-userdebug \
-    lineage_tissot-user
+    legion_tissot-eng \
+    legion_tissot-userdebug \
+    legion_tissot-user

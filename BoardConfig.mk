@@ -52,6 +52,3 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/tissot/BoardConfigVendor.mk
-
-# SELinux
-SELINUX_IGNORE_NEVERALLOWS := true
