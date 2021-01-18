@@ -29,7 +29,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 SAKURA_OFFICIAL := true
 
 # Gapps Sector
-SAKURA_GAPPS := true
+SAKURA_BUILD_TYPE := gapps
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
